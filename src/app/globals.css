@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white dark:bg-[#1d1f21]
+  }
+}
+
+@layer utilities {
+  .h1 {
+    @apply text-4xl tracking-[-0.015em] font-bold w-fit;
+  }
+  .h2 {
+    @apply text-3xl tracking-[-0.015em] font-semibold w-fit;
+  }
+  .h3 {
+    @apply text-2xl tracking-[-0.015em] font-semibold w-fit;
+  }
+  .p {
+    @apply text-base font-normal;
+  }
+  .link {
+    @apply text-base font-normal text-[#3B82F6] underline;
+  }
+  .em {
+    @apply text-base font-semibold;
+  }
+  .small {
+    @apply text-xs font-normal text-opacity-50;
+  }
+}
